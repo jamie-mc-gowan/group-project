@@ -1,4 +1,5 @@
-#CS230 Group Project - ECommerce Site
+#CS230 Group Project
+E-Commerce Site
 ----
 
 - Home Page
