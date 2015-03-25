@@ -1,2 +1,1 @@
-# group-project
-CS230 Group Project - ECommerce Site
+#CS230 Group Project - ECommerce Site
