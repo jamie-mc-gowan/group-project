@@ -1,6 +1,5 @@
 #CS230 Group Project
 E-Commerce Site
-----
 
 - Home Page
 - Search Results Page
