@@ -19,7 +19,8 @@ header {
 .nav_list {
     font-family: 'Pacifico', cursive;
 	list-style-type: none;
-    padding-top: 10px;
+    padding-top: 25px;
+    padding-right: 8px;
     margin: auto;
     float: right;
     display: inline-block;
@@ -30,10 +31,6 @@ header {
     font-size: 125%;
 }
 
-a, a:viqsited, a:hover {
-    color: #6495ED;
-    text-decoration: none;
-}
 
 .center_search {
     padding-top: 10px;
@@ -43,5 +40,16 @@ a, a:viqsited, a:hover {
 
 #search {
     height: 38px;
-    width: 50%;
+    width: 60%;
+    margin-top: 15px;
+}
+
+
+a, a:visited, a:hover {
+    color: #6495ED;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
 }
