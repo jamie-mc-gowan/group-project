@@ -13,16 +13,62 @@
 				<li class="nav_list_item"><a href="#">Log In</a> |</li>
 				<li class="nav_list_item"><a href="#">Help</a> |</li>
 				<li class="nav_list_item"><a href="#">Contact</a></li>
-            </ul>            
+            </ul>
             <a href="#"><h1 class="title">Shoes</h1></a>
             <div class="center_search">
                 <form action="#" id="search_box">
                     <input type="search" id="search" name="search" placeholder="Search for an item">
                 </form>
             </div>
-            <br>
-            <p></p>
+            <br> <!-- This br is required to overcome the float:left above -->
+            <hr>
         </header>
+        <div id="main_body">
+            <div class="wrapper"> <!-- used to create a 2x1 grid -->
+                <a href="#">
+                    <div class="left_column"> <!-- the left column -->
+                        <h2>Mens</h2>
+                        <img src="img/mens_shoes.png">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="right_column"> <!-- the right column -->
+                       <h2>Womens</h2>
+                        <img src="img/womens_shoes.png">
+                    </div>
+                </a>
+            </div> <!-- Everything below NEED to be replaced with something more dynamic/usuable -->
+            <h2>Featured Items:  
+                <select> <!-- The featured items should change when the dropdown value is changed -->
+                    <option value="mens">Mens</option>
+                    <option value="womens">Womens</option>
+                </select></h2>
+            <div class="wrapper"> <!-- This should be a grid with 2 rows and 4 columns (8 items) -->
+                <div class="left_column">
+                    <a href="#"><img name="one" src="img/m_black_1.jpg" onmouseover="one.src='img/m_black_2.jpg'" onmouseout="one.src='img/m_black_1.jpg'"></a>
+                </div>
+                <div class="left_column">
+                    <a href="#"><img name="two" src="img/m_brown_1.jpg" onmouseover="two.src='img/m_brown_2.jpg'" onmouseout="two.src='img/m_brown_1.jpg'"></a>
+                </div>
+            </div>
+            <div class="wrapper"> <!-- This should be a grid with 2 rows and 4 columns (8 items) -->
+                <div class="left_column">
+                    <a href="#"><img name="three" src="img/m_blue_1.jpg" onmouseover="three.src='img/m_blue_2.jpg'" onmouseout="three.src='img/m_blue_1.jpg'"></a>
+                </div>
+                <div class="left_column">
+                    <a href="#"><img name="four" src="img/m_grey_1.jpg" onmouseover="four.src='img/m_grey_2.jpg'" onmouseout="four.src='img/m_grey_1.jpg'"></a>
+                </div>
+            </div>
+        </div>
+                
+        <footer> <!-- the footer should later be replaced/generated using PHP -->
+            <ul class="nav_list_footer">
+				<li class="nav_list_item_footer"><a href="#">About</a> |</li>
+				<li class="nav_list_item_footer"><a href="#">FAQ</a> |</li>
+				<li class="nav_list_item_footer"><a href="#">Terms &amp; Conditions</a></li>
+            </ul>     
+            <p>&copy; Shoes 2015.</p>
+        </footer>
         
         
     </body>
