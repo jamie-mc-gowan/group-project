@@ -110,6 +110,19 @@ footer {
 /** this needs to be fixed, need css grid **/
 }
 
+textarea {
+    border-radius: 15px;
+    border: 2px solid #6495ED;
+}
+
+input {
+    border-radius: 15px;
+    border: 2px solid #6495ED;
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /* --------------------------------------------------------------*/
 #nava {
     background-color:#FFF;
