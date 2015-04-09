@@ -82,12 +82,6 @@ a:hover {
     width:50%
 }
 
-.1_4 {
-    float:left;
-    width:25%;
-    margin:0
-}
-
 hr {
     border:0;
     height:1.5px;
@@ -105,27 +99,27 @@ h2 {
 footer {
     text-align:center;
     font-family:'Pacifico',cursive;
-    font-size:x-large;
+    font-size:x-large
 }
 
 textarea {
-    border-radius: 15px;
-    border: 2px solid #6495ED;
+    border-radius:15px;
+    border:2px solid #6495ED
 }
 
 input {
-    border-radius: 15px;
-    border: 2px solid #6495ED;
-    height: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    border-radius:15px;
+    border:2px solid #6495ED;
+    height:20px;
+    padding-left:10px;
+    padding-right:10px
 }
 
 /* Required to prevent grid (column) overflow */
- .row:before, .row:after {
+.row:before,.row:after {
     content:"";
-    display: table ;
-    clear:both;
+    display:table;
+    clear:both
 }
 
 /* --------------------------------------------------------------*/
