@@ -106,8 +106,6 @@ footer {
     text-align:center;
     font-family:'Pacifico',cursive;
     font-size:x-large;
-    padding-top:575px
-/** this needs to be fixed, need css grid **/
 }
 
 textarea {
@@ -121,6 +119,13 @@ input {
     height: 20px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+/* Required to prevent grid (column) overflow */
+ .row:before, .row:after {
+    content:"";
+    display: table ;
+    clear:both;
 }
 
 /* --------------------------------------------------------------*/
