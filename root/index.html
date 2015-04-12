@@ -30,8 +30,7 @@
                     <input id="search" name="search" placeholder="Search for an item" type="search">
                 </form>
             </div><br>
-            <!-- This br is required to overcome the float:left above -->
-             <!--================================================================================-->
+            <!--================================================================================-->
             <div id="nava">
                 <div id="nava_wrapper">
                     <ul>
@@ -99,19 +98,22 @@
         <div id="main_body">
             <div class="wrapper">
                 <!-- used to create a 2x1 grid -->
-                <a href="#">
-                <div class="left_column">
-                    <!-- the left column -->
-                    <h2>
-                        Mens
-                    </h2><img src="img/mens_shoes.png">
-                </div></a> <a href="#">
-                <div class="right_column">
-                    <!-- the right column -->
-                    <h2>
-                        Womens
-                    </h2><img src="img/womens_shoes.png">
-                </div></a>
+                <div class="row">
+                    <div class="col_1_2">
+                        <!-- the left column -->
+                        <a href="#">
+                        <h2>
+                            Mens
+                        </h2><img src="img/mens_shoes.png"></a>
+                    </div>
+                    <div class="col_1_2">
+                        <!-- the right column -->
+                        <a href="#">
+                        <h2>
+                            Womens
+                        </h2><img src="img/womens_shoes.png"></a>
+                    </div>
+                </div>
             </div><!-- Everything below NEED to be replaced with something more dynamic/usuable -->
             <h2>
                 Featured Items: <select>
@@ -125,25 +127,31 @@
                 </select>
             </h2>
             <div class="wrapper">
-                <!-- This should be a grid with 2 rows and 4 columns (8 items) -->
-                <div class="left_column">
-                    <a href="#"><img id="one" name="one" onmouseout="one.src='img/m_black_1.jpg'" onmouseover="one.src='img/m_black_2.jpg'" src=
-                    "img/m_black_1.jpg"></a>
+                <!-- This should be a grid with 2 rows and 3 columns (6 items) -->
+                <div class="row">
+                    <div class="col_1_3">
+                        <a href="#"><img id="one" name="one" onmouseout="one.src='img/m_black_1.jpg'" onmouseover="one.src='img/m_black_2.jpg'" src= "img/m_black_1.jpg"></a>
+                    </div>
+                    <div class="col_1_3">
+                        <a href="#"><img id="two" name="two" onmouseout="two.src='img/m_brown_1.jpg'" onmouseover="two.src='img/m_brown_2.jpg'" src="img/m_brown_1.jpg"></a>
+                    </div>
+                    <div class="col_1_3">
+                        <a href="#"><img id="three" name="three" onmouseout="three.src='img/m_blue_1.jpg'" onmouseover="three.src='img/m_blue_2.jpg'" src="img/m_blue_1.jpg"></a>
+                    </div>
                 </div>
-                <div class="left_column">
-                    <a href="#"><img id="two" name="two" onmouseout="two.src='img/m_brown_1.jpg'" onmouseover="two.src='img/m_brown_2.jpg'" src=
-                    "img/m_brown_1.jpg"></a>
+                <div class="row">
+                    <div class="col_1_3">
+                        <a href="#"><img id="four" name="four" onmouseout="four.src='img/m_grey_1.jpg'" onmouseover="four.src='img/m_grey_2.jpg'" src="img/m_grey_1.jpg"></a>            
+                    </div>
+                    <div class="col_1_3">
+                        <a href="#"><img id="five" name="five" onmouseout="five.src='img/m_denim_1.jpg'" onmouseover="five.src='img/m_denim_2.jpg'" src="img/m_denim_1.jpg"></a>
+                    </div>
+                    <div class="col_1_3">
+                        <a href="#"><img id="six" name="six" onmouseout="six.src='img/m_white_1.jpg'" onmouseover="six.src='img/m_white_2.jpg'" src="img/m_white_1.jpg"></a>
+                    </div>
                 </div>
             </div>
-            <div class="wrapper">
-                <!-- This should be a grid with 2 rows and 4 columns (8 items) -->
-                <div class="left_column">
-                    <a href="#"><img id="three" name="three" onmouseout="three.src='img/m_blue_1.jpg'" onmouseover="three.src='img/m_blue_2.jpg'" src=
-                    "img/m_blue_1.jpg"></a>
-                </div>
-                <div class="left_column">
-                    <a href="#"><img id="four" name="four" onmouseout="four.src='img/m_grey_1.jpg'" onmouseover="four.src='img/m_grey_2.jpg'" src=
-                    "img/m_grey_1.jpg"></a>
+            
                 </div>
             </div>
         </div>
