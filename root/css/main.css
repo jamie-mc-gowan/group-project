@@ -3,6 +3,12 @@ h1,h2,li.nav_list_item,footer {
     font-family:'Pacifico',cursive
 }
 
+h2 {
+    text-align:center;
+    font-size:xx-large
+}
+
+
 .title {
     float:left;
     font-size:400%;
@@ -85,6 +91,12 @@ a:hover {
     width: 33.33%;
 }
 
+.col_2_3 {
+    /* A column that spans 2/3 of the width */
+    float: left;
+    width: 66.66%;
+}
+
 .col_1_4 {
     /* Column with 1/4 width */
     float: left;
@@ -99,11 +111,6 @@ hr {
     background-image:-moz-linear-gradient(left,#fff,#6495ED,#fff);
     background-image:-ms-linear-gradient(left,#fff,#6495ED,#fff);
     background-image:-webkit-linear-gradient(left,#fff,#6495ED,#fff)
-}
-
-h2 {
-    text-align:center;
-    font-size:xx-large
 }
 
 footer {
@@ -125,11 +132,38 @@ input {
     padding-right:10px
 }
 
+.basket {
+    font-weight: bold;
+    background-color: #6495ED;
+    border-radius: 25px;
+    height: 40px;
+    border: 2.5px solid         rgba(0,0,0,0.5);
+}
+
+.basket:hover {
+    background-color: #2A66D3;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 22px;
+}
+
 /* Required to prevent grid (column) overflow */
 .row:before,.row:after {
     content:"";
     display:table;
     clear:both
+}
+
+.product_image {
+    padding-top: 200px;
+    width: 100%;
+    /* Force width to fill parent */
+}
+
+.product_description {
+    text-align:left;
 }
 
 /* --------------------------------------------------------------*/

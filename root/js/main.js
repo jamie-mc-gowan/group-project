@@ -5,7 +5,7 @@ function checkPassRegister()
         if (pass.val().length >= 6)
         {
             var confirmPass = $("#confirmPassword");
-            //Check if the two passwords match, alert user
+            //Check if the two passwords match, alert user if not
             if (pass.val() != confirmPass.val())
             {
                 alert("Passwords do not match!");
@@ -14,7 +14,7 @@ function checkPassRegister()
             }
             else
             {
-                return true; //They matched
+                return true; //They matched, submit form
             }
         }
         else
@@ -26,16 +26,26 @@ function checkPassRegister()
         }
         return false; //Prevent form submission
     }
-    //TODO: Merge to two below functions using "Event/Trigger"
 
-function resetColourPassword(event)
+//TODO: Merge to two below functions using "Event/Trigger"
+function resetColourPassword()
 {
     //Reset background color
     $("#password").css("background-color", "inherit");
 }
 
-function resetColourConfirmPassword(event)
+function resetColourConfirmPassword()
 {
     //Reset background color
     $("#confirmPassword").css("background-color", "inherit");
+}
+
+function addToBasket() {
+    var size = $("#size").val();
+    //Ensure the user specified a size
+    if(size == "default") {
+        alert("Please choose a size");
+    }
+    
+    //...... can't implement yet without PHP stuff.
 }
