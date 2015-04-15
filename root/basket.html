@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
@@ -6,10 +7,10 @@
         <meta charset="utf-8">
         <meta content="An outline outlet for buying shoes and footware" name="description">
         <title>
-            Shoes | Shoes &amp; Footware for Sale
+            Shopping Basket | Shoes &amp; Footware for Sale
         </title>
     </head>
-    <body>
+    <body onload="calculateUnitPrice();">
         <header>
             <ul class="nav_list">
                 <li class="nav_list_item">
@@ -21,7 +22,7 @@
                 <li class="nav_list_item">
                     <a href="mailto:support@shoes.com">Contact</a>
                 </li>
-            </ul><a href="#">
+            </ul><a href="index.html">
             <h1 class="title">
                 Shoes
             </h1></a>
@@ -96,66 +97,43 @@
             <hr>
         </header>
         <div id="main_body">
-            <div class="wrapper">
-                <!-- used to create a 2x1 grid -->
-                <div class="row">
-                    <div class="col_1_2">
-                        <!-- the left column -->
-                        <a href="#">
-                        <h2>
-                            Mens
-                        </h2><img src="img/mens_shoes.png"></a>
+            <h2>Shopping Basket</h2>
+            <div id="basket_items" class="wrapper">
+                <!-- remove incline css, only here for testingg -->
+                <h2 style="color:black">Total Price: <span id="total_price"></span></h2>
+                <div class="row item">
+                    <div class="col_1_3">
+                        <img class="basket_product_image" src="img/m_black_1.jpg">
                     </div>
-                    <div class="col_1_2">
-                        <!-- the right column -->
-                        <a href="#">
-                        <h2>
-                            Womens
-                        </h2><img src="img/womens_shoes.png"></a>
+                    <div class="col_1_3 unit_details">
+                        <p class="unit_title">Black Denim Lace Up Plimsolls</p>
+                        <p>Unit Price: <span class="unit_price">€35.00</span></p>
+                        <p>Size: <span class="unit_size">11</span></p>
+                        <p>Quantity: <span class="unit_quantity">2</span></p>
+                <p>Total Price: <span class="unit_total_price"></span></p>
+                        
                     </div>
+                    <div class="col_1_3">
+                        <button class="remove_button" onclick="removeFromBasket(this)">Remove from Basket</button>  
+                    </div> 
                 </div>
-            </div><!-- Everything below NEED to be replaced with something more dynamic/usuable -->
-            <h2>
-                Featured Items: <select>
-                    <!-- The featured items should change when the dropdown value is changed -->
-                    <option value="mens">
-                        Mens
-                    </option>
-                    <option value="womens">
-                        Womens
-                    </option>
-                </select>
-            </h2>
-            <div class="wrapper">
-                <!-- This should be a grid with 2 rows and 3 columns (6 items) -->
-                <div class="row">
+                <div class="row item">
                     <div class="col_1_3">
-                        <a href="#"><img id="one" name="one" onmouseout="one.src='img/m_black_1.jpg'" onmouseover="one.src='img/m_black_2.jpg'" src=
-                        "img/m_black_1.jpg"></a>
+                        <img class="basket_product_image" src="img/m_brown_1.jpg">
+                    </div>
+                    <div class="col_1_3 unit_details">
+                        <p class="unit_title">Brown Leather Shoes</p>
+                        <p>Unit Price: <span class="unit_price">€47.00</span></p>
+                        <p>Size: <span class="unit_size">11</span></p>
+                        <p>Quantity: <span class="unit_quantity">3</span></p>
+                <p>Total Price: <span class="unit_total_price"></span></p>
+                        
                     </div>
                     <div class="col_1_3">
-                        <a href="#"><img id="two" name="two" onmouseout="two.src='img/m_brown_1.jpg'" onmouseover="two.src='img/m_brown_2.jpg'" src=
-                        "img/m_brown_1.jpg"></a>
-                    </div>
-                    <div class="col_1_3">
-                        <a href="#"><img id="three" name="three" onmouseout="three.src='img/m_blue_1.jpg'" onmouseover="three.src='img/m_blue_2.jpg'" src=
-                        "img/m_blue_1.jpg"></a>
-                    </div>
+                        <button class="remove_button" onclick="removeFromBasket(this)">Remove from Basket</button>  
+                    </div> 
                 </div>
-                <div class="row">
-                    <div class="col_1_3">
-                        <a href="#"><img id="four" name="four" onmouseout="four.src='img/m_grey_1.jpg'" onmouseover="four.src='img/m_grey_2.jpg'" src=
-                        "img/m_grey_1.jpg"></a>
-                    </div>
-                    <div class="col_1_3">
-                        <a href="#"><img id="five" name="five" onmouseout="five.src='img/m_denim_1.jpg'" onmouseover="five.src='img/m_denim_2.jpg'" src=
-                        "img/m_denim_1.jpg"></a>
-                    </div>
-                    <div class="col_1_3">
-                        <a href="#"><img id="six" name="six" onmouseout="six.src='img/m_white_1.jpg'" onmouseover="six.src='img/m_white_2.jpg'" src=
-                        "img/m_white_1.jpg"></a>
-                    </div>
-                </div>
+                
             </div>
         </div>
         <footer>
@@ -175,5 +153,13 @@
                 &copy; Shoes 2015.
             </p>
         </footer>
+        
+        <!-- Delete Later -->
+        <script type="text/javascript">
+            alert("I should check if the user is logged in first!! \nThis is just a skeleton file.\nJavascript calculate the prices but php is required to fill the page.\nTODO: update 'total price' after item removed");
+        </script>
+        
+        <script src="js/main.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     </body>
 </html>

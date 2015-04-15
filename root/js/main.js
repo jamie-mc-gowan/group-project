@@ -49,3 +49,42 @@ function addToBasket() {
     
     //...... can't implement yet without PHP stuff.
 }
+
+/*
+    Calculate the price of the items in the user's basket. Takes into consideration
+    the individual unit price and quantity of each item. It the shows the result
+    on screen.
+*/
+function calculateUnitPrice() {
+    var total = 0.0; //will store the total price of all items in basket
+    var basket = document.getElementById("basket_items");
+    var items = basket.getElementsByClassName("item"); //pick each item
+    for(var i = 0; i < items.length; i++) { //cycle through each item
+        var price = items[i].getElementsByClassName("unit_price"); //get ref
+        price = price[0].innerHTML; //get actual value
+        price = parseFloat(price.substring(1)); //remove € and parse float
+        
+        var quantity = items[i].getElementsByClassName("unit_quantity");
+        quantity = parseInt(quantity[0].innerHTML); //get value and convert to int
+        
+        var totalPriceRef = items[i].getElementsByClassName("unit_total_price")[0]; //reference to where the total price will be shown
+        var totalPrice = quantity * price; //calculate price
+        totalPriceRef.innerHTML = "€" + totalPrice; //show price
+        
+        total += totalPrice;
+    }
+    
+    document.getElementById("total_price").innerHTML = "€" + total;
+}
+
+
+/*
+    Removes the item from the users basket.
+    NOTE that this is only visual, it doesn't actually effect the users basket,
+    i.e. the items will reappear on reload.
+    
+    TODO: recalculate the total price upon removal of an item.
+*/
+function removeFromBasket(caller) {
+    caller.parentElement.parentElement.innerHTML = "";
+}
