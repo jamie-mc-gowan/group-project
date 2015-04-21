@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
@@ -6,10 +7,10 @@
         <meta charset="utf-8">
         <meta content="An outline outlet for buying shoes and footware" name="description">
         <title>
-            Shoes | Shoes &amp; Footware for Sale
+            Contact | Shoes &amp; Footware for Sale
         </title>
     </head>
-    <body>
+    <body onload="calculateUnitPrice();">
         <header>
             <ul class="nav_list">
                 <li class="nav_list_item">
@@ -19,9 +20,9 @@
                     <a href="basket.html">Basket</a> |
                 </li>
                 <li class="nav_list_item">
-                    <a href="contact.html">Contact</a>
+                    <a href="#">Contact</a>
                 </li>
-            </ul><a href="#">
+            </ul><a href="index.html">
             <h1 class="title">
                 Shoes
             </h1></a>
@@ -96,67 +97,28 @@
             <hr>
         </header>
         <div id="main_body">
-            <div class="wrapper">
-                <!-- used to create a 2x1 grid -->
-                <div class="row">
-                    <div class="col_1_2">
-                        <!-- the left column -->
-                        <a href="#">
-                        <h2>
-                            Mens
-                        </h2><img src="img/mens_shoes.png"></a>
-                    </div>
-                    <div class="col_1_2">
-                        <!-- the right column -->
-                        <a href="#">
-                        <h2>
-                            Womens
-                        </h2><img src="img/womens_shoes.png"></a>
-                    </div>
-                </div>
-            </div><!-- Everything below NEED to be replaced with something more dynamic/usuable -->
-            <h2>
-                Featured Items: <select>
-                    <!-- The featured items should change when the dropdown value is changed -->
-                    <option value="mens">
-                        Mens
-                    </option>
-                    <option value="womens">
-                        Womens
-                    </option>
-                </select>
-            </h2>
-            <div class="wrapper">
-                <!-- This should be a grid with 2 rows and 3 columns (6 items) -->
-                <div class="row">
-                    <div class="col_1_3">
-                        <a href="#"><img id="one" name="one" onmouseout="one.src='img/m_black_1.jpg'" onmouseover="one.src='img/m_black_2.jpg'" src=
-                        "img/m_black_1.jpg"></a>
-                    </div>
-                    <div class="col_1_3">
-                        <a href="#"><img id="two" name="two" onmouseout="two.src='img/m_brown_1.jpg'" onmouseover="two.src='img/m_brown_2.jpg'" src=
-                        "img/m_brown_1.jpg"></a>
-                    </div>
-                    <div class="col_1_3">
-                        <a href="#"><img id="three" name="three" onmouseout="three.src='img/m_blue_1.jpg'" onmouseover="three.src='img/m_blue_2.jpg'" src=
-                        "img/m_blue_1.jpg"></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col_1_3">
-                        <a href="#"><img id="four" name="four" onmouseout="four.src='img/m_grey_1.jpg'" onmouseover="four.src='img/m_grey_2.jpg'" src=
-                        "img/m_grey_1.jpg"></a>
-                    </div>
-                    <div class="col_1_3">
-                        <a href="#"><img id="five" name="five" onmouseout="five.src='img/m_denim_1.jpg'" onmouseover="five.src='img/m_denim_2.jpg'" src=
-                        "img/m_denim_1.jpg"></a>
-                    </div>
-                    <div class="col_1_3">
-                        <a href="#"><img id="six" name="six" onmouseout="six.src='img/m_white_1.jpg'" onmouseover="six.src='img/m_white_2.jpg'" src=
-                        "img/m_white_1.jpg"></a>
-                    </div>
-                </div>
-            </div>
+            <h2>Contact</h2>
+            <p>Please complete the form below with your query or feedback and our Customer Services Team will be more than happy to help you. Why not check out our <a href="#">FAQ</a> to see if there is an answer to your query.</p>
+            <form>
+                <p>Name: <input required size="35" id="name" type="text"></p>
+                <p>Email: <input required size="35" id="email" type="email"></p>
+                <p>Subject: <select id="subject" required>
+                    <option disabled value="default">Select Subject</option>
+                    <option disabled>------------------</option>
+                    <option value="delivery">Delivery</option>
+                    <option value="general">General Enquiry</option>
+                    <option value="payment">Payment</option>
+                    <option value="issue">Product Issue</option>
+                    <option value="returns">Returns</option>
+                    <option value="technical">Technical Issue</option>
+                </select></p>
+                <p>Message:</p>
+                <textarea name="message" id="message" cols="38" rows="5">
+                
+                </textarea><br>
+                <button class="basket" id="send">Send Message</button>
+                
+            </form>
         </div>
         <footer>
             <!-- the footer should later be replaced/generated using PHP -->

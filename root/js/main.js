@@ -86,5 +86,6 @@ function calculateUnitPrice() {
     TODO: recalculate the total price upon removal of an item.
 */
 function removeFromBasket(caller) {
+    //Delete item from basket
     caller.parentElement.parentElement.innerHTML = "";
 }

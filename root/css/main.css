@@ -131,15 +131,15 @@ footer {
 
 textarea {
     border-radius:15px;
-    border:2px solid #6495ED
+    border:2px solid #6495ED;
+    padding: 5px;
 }
 
 input {
     border-radius:15px;
     border:2px solid #6495ED;
     height:20px;
-    padding-left:10px;
-    padding-right:10px
+    padding: 5px;
 }
 
 .basket {
@@ -148,6 +148,7 @@ input {
     border-radius: 25px;
     height: 40px;
     border: 2.5px solid rgba(0,0,0,0.5);
+    width: 320px;
 }
 
 .basket:hover {
@@ -232,7 +233,6 @@ input {
 
 #nava ul li a,visited {
     font-size:200%;
-    
     color:#6495ED;
     display:block;
     padding:15px;
